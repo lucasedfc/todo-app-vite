@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+        <div id="app">
+          
+          <h1 class="title">Todo App With Vite.js</h1>
+          <section class="todoapp">
+            <header class="header">
+              <h1>Tasks</h1>
+              <input class="new-todo" placeholder="¿What do you need to be done?" autofocus>
+            </header>
+            <section class="main">
+              <input id="toggle-all" class="toggle-all" type="checkbox">
+              <label for="toggle-all">Mark all as complete</label>
+              <ul class="todo-list">
+              </ul>
+            </section>
+            <footer class="footer">
+              <span class="todo-count"><strong>0</strong> Pending(s)</span>
+              <!-- Remove this if you don't implement routing -->
+              <ul class="filters">
+                <li>
+                  <a class="selected filter" href="#/">All</a>
+                </li>
+                <li>
+                  <a class="filter" href="#/active">Pending</a>
+                </li>
+                <li>
+                  <a class="filter" href="#/completed">Completed</a>
+                </li>
+              </ul>
+              <button class="clear-completed">Delete Completed</button>
+            </footer>
+          </section>
+          <footer class="info">
+      
+            <p>Template created by <a href="http://sindresorhus.com">Sindre Sorhus</a></p>
+            <p>Created by <a target="_blank" href="https://github.com/lucasedfc">lucasedfc</a></p>
+            <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+          </footer>
+        </div>
+        </body>
+    <script type="module" src="/main.js"></script>
+</html>
